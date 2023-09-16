@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<Tab text="New File">
+  <content>
+    <AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+	   <children>
+	      <Label fx:id="pathLabel" text="Path do not found" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="2.0">
+	         <font>
+	            <Font size="13.0" />
+	         </font>
+	      </Label>
+	      <Label text="TXT text editor" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+	         <font>
+	            <Font size="13.0" />
+	         </font>
+	      </Label>
+      <TextArea fx:id="textArea" onKeyReleased="#change" prefHeight="584.0" prefWidth="693.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+      <Button layoutX="639.0" layoutY="21.0" mnemonicParsing="false" onAction="#close" text="Close" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="22.0" />
+      <Button layoutX="598.0" layoutY="22.0" mnemonicParsing="false" onAction="#save" text="Save" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="22.0" />
+	   </children>
+	</AnchorPane>
+  </content>
+</Tab>
+

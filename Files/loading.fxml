@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<Tab text="Untitled Tab">
+  <content>
+	<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+	   <children>
+	      <Label fx:id="pathLabel" text="Path does not found" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+	         <font>
+	            <Font size="14.0" />
+	         </font>
+	      </Label>
+	      <Label fx:id="editorLabel" text="Editor not found" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0">
+	         <font>
+	            <Font size="14.0" />
+	         </font>
+	      </Label>
+	      <Separator layoutX="176.0" layoutY="11.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0" />
+	      <ProgressBar prefWidth="200.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="25.0" />
+	   </children>
+	</AnchorPane>
+  </content>
+</Tab>
