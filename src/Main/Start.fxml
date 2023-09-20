@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="358.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.MillenniarSt.MillenniarTexture.Main.Main">
+   <children>
+      <Label layoutX="166.0" layoutY="198.0" text="Fail to found or load this resource" AnchorPane.bottomAnchor="225.0" AnchorPane.leftAnchor="166.0" AnchorPane.rightAnchor="166.0" AnchorPane.topAnchor="198.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="234.0" layoutY="225.0" text="Click to start" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="234.0" AnchorPane.rightAnchor="234.0" AnchorPane.topAnchor="225.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <MediaView fx:id="mediaView" fitHeight="450.0" fitWidth="600.0" onError="#show" onMouseReleased="#show" />
+   </children>
+</AnchorPane>
