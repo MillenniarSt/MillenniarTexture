@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="77.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="21.0" layoutY="50.0" text="Key:" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="25.0" />
+      <Label fx:id="titleLabel" layoutX="7.0" layoutY="6.0" text="Title" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="2.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="keyField" layoutX="39.0" layoutY="28.0" onKeyReleased="#checkKey" promptText="String key" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+      <Label layoutX="2.0" layoutY="63.0" text="Value:" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="55.0" />
+      <TextField fx:id="valueField" layoutX="40.0" layoutY="38.0" onKeyReleased="#checkString" promptText="String value" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="50.0" />
+      <ImageView fx:id="keyCheck" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="25.0" />
+      <ImageView fx:id="valueCheck" fitHeight="20.0" fitWidth="20.0" layoutX="12.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="55.0" />
+   </children>
+</AnchorPane>

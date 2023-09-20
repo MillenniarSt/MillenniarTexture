@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Tab text="Untitled Tab" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+  <content>
+	<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+	   <children>
+	      <Label fx:id="pathLabel" text="Path does not found" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+	         <font>
+	            <Font size="14.0" />
+	         </font>
+	      </Label>
+	      <Label text="PROPERTIES text editor" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0">
+	         <font>
+	            <Font size="14.0" />
+	         </font>
+	      </Label>
+	      <SplitPane dividerPositions="0.4645441389290883" prefHeight="584.0" prefWidth="693.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+	        <items>
+	          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox fx:id="propertiesBox" layoutX="103.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0" />
+                  <Label layoutX="6.0" layoutY="6.0" text="Properties:" AnchorPane.leftAnchor="6.0" AnchorPane.topAnchor="2.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="181.0" layoutY="4.0" mnemonicParsing="false" onAction="#addProperty" text="Add" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="2.0" />
+                  <Button layoutX="272.0" layoutY="4.0" mnemonicParsing="false" onAction="#removeProperty" text="Remove" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="2.0" />
+                  <Separator layoutX="29.0" layoutY="28.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0" />
+               </children>
+            </AnchorPane>
+	          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="503.0" prefWidth="431.0">
+               <children>
+                  <TextArea fx:id="textArea" onKeyReleased="#change" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+	            </AnchorPane>
+	        </items>
+	      </SplitPane>
+      <Button layoutX="640.0" layoutY="23.0" mnemonicParsing="false" onAction="#close" text="Close" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="25.0" />
+      <Button layoutX="595.0" layoutY="25.0" mnemonicParsing="false" onAction="#save" text="Save" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="25.0" />
+      <ToggleButton fx:id="PropEditor" layoutX="11.0" layoutY="25.0" mnemonicParsing="false" text="Properties editor" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="25.0" />
+      <Button layoutX="127.0" layoutY="25.0" mnemonicParsing="false" onAction="#build" text="Build" AnchorPane.leftAnchor="125.0" AnchorPane.topAnchor="25.0" />
+	   </children>
+	</AnchorPane>
+    </content>
+</Tab>

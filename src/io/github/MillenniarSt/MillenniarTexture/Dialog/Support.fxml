@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane headerText="Get Support" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane maxHeight="80.0" maxWidth="300.0" minHeight="80.0" minWidth="300.0" prefHeight="80.0" prefWidth="300.0">
+         <children>
+            <Hyperlink layoutX="53.0" layoutY="13.0" onAction="#goDiscord" text="https://discord.gg/prCjNU7d2X" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="7.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fx:id="imageDiscord" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="5.0" />
+            <ImageView fx:id="imageWebSite" fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0" />
+            <Hyperlink layoutX="50.0" layoutY="60.0" onAction="#goWebSite" text="https://millenniar-studios.webnode.it" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="52.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Hyperlink>
+         </children></AnchorPane>
+   </content>
+   <expandableContent>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+   </expandableContent>
+   <buttonTypes>
+      <ButtonType fx:constant="CLOSE" />
+   </buttonTypes>
+</DialogPane>
